@@ -1,10 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
+{% extends 'base.html.twig' %}
 
-</head>
-<body>
-   <h1>Bienvenue</h1>
-</body>
-</html>
+{% block title %}Wild Series{% endblock %}
+
+{% block body %}
+<h1>Welcome to {{ website }}</h1>
+<img src="{{ asset('images/logoescalade.jpg') }}" />
+{% endblock %}
